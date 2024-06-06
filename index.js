@@ -18,6 +18,10 @@ const HOSTNAME = process.env.HOSTNAME;
 
 const app = express();
 
+app.get("/", (req,res) => {
+   res.send("welcome to server")
+})
+
 app.use(cors({
    origin: ["http://localhost:3000", "http://localhost:3001", "https://client1-theta.vercel.app/log-in"],
    methods: ["GET", "POST", "PUT", "DELETE"],
