@@ -23,7 +23,7 @@ app.get("/", (req,res) => {
 })
 
 app.use(cors({
-   origin: ["http://localhost:3000", "http://localhost:3001", "https://client1-4f17.vercel.app/"],
+   origin: ["https://client1-t24j.vercel.app/log-in/"],
    methods: ["GET", "POST", "PUT", "DELETE"],
    credentials: true,
 }));
